@@ -6,6 +6,7 @@ import App from './frontend/components/App';
 import Links from './frontend/components/Links';
 import NestedLinks from './frontend/components/NestedLinks';
 import Users from './frontend/components/Users';
+import Clock from './frontend/components/Clock';
 import { Route, Router, IndexRoute, hashHistory } from 'react-router';
 
 const Root = () => {
@@ -18,6 +19,7 @@ const Root = () => {
           <Route path='nested' component={NestedLinks}></Route>
         </Route>
         <Route path='users/:userId' component={Users}></Route>
+        <Route path='clock' component={Clock}></Route>
       </Router>
     </Provider>
   )
